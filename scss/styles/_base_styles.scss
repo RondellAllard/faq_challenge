@@ -1,0 +1,25 @@
+/*===================================================================================================
+-------------------------------------------BASE STYLES ----------------------------------------------
+===================================================================================================*/
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient($bg-clr-primary, $bg-clr-secondary);
+  height: 100vh;
+
+  /*card placement*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

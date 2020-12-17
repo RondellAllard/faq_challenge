@@ -1,0 +1,45 @@
+/*===================================================================================================
+-------------------------------------------CARD STYLE ----------------------------------------------
+===================================================================================================*/
+
+//Main Card
+//main Images
+.white_space {
+  height: 150px;
+  width: 340px;
+  position: relative;
+  .bg_image {
+    height: 125%;
+    width: 125%;
+    position: absolute;
+    top: -78%;
+    right: -14%;
+    background-image: url(../../images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .bg_shadow {
+    height: 125%;
+    width: 125%;
+    position: absolute;
+    top: -60%;
+    right: -14%;
+    background-image: url(../../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.main_card {
+  height: 550px;
+  width: 340px;
+  margin-top: 150px;
+  background-color: $bg-clr-card;
+  border-radius: 2rem;
+  @media (min-width: $bp-desktop) {
+    height: 570px;
+    width: 960px;
+  }
+}
