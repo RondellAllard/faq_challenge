@@ -3,43 +3,93 @@
 ===================================================================================================*/
 
 //Main Card
+.main_card {
+  height: 550px;
+  width: 300px;
+  background-color: $bg-clr-card;
+  border-radius: 2rem;
+
+  @media (min-width: $bp-desktop) {
+    height: 570px;
+    width: 960px;
+  }
+}
 //main Images
-.white_space {
-  height: 150px;
-  width: 340px;
+.main_img_cell {
+  height: 120px;
+  width: 266px;
   position: relative;
   .bg_image {
-    height: 125%;
-    width: 125%;
+    height: 196px;
+    width: 266px;
     position: absolute;
-    top: -78%;
-    right: -14%;
+    top: -90%;
+    right: -0%;
     background-image: url(../../images/illustration-woman-online-mobile.svg);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
   .bg_shadow {
-    height: 125%;
-    width: 125%;
+    height: 104px;
+    width: 240px;
     position: absolute;
-    top: -60%;
-    right: -14%;
+    top: -2%;
+    right: -0%;
     background-image: url(../../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 240px 104px;
     background-position: center;
   }
 }
+// FAQ secion
+.faq_space {
+  text-align: center;
+}
 
-.main_card {
-  height: 550px;
-  width: 340px;
-  margin-top: 150px;
-  background-color: $bg-clr-card;
-  border-radius: 2rem;
-  @media (min-width: $bp-desktop) {
-    height: 570px;
-    width: 960px;
+.question_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px $seperator-clr;
+
+  &:focus {
+    outline: none;
+    font-weight: 700;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    & > .arrow {
+      transform: rotate(180deg);
+      background-size: 10px 7px;
+      background-position: left 6px;
+    }
+
+    & ~ .answer {
+      display: block;
+      padding-bottom: 1rem;
+      border-bottom: solid 1px $seperator-clr;
+    }
   }
+
+  .question {
+    margin: 0;
+  }
+
+  .arrow {
+    width: 10%;
+    background-image: url(../../images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 7px;
+    background-position: right 2px;
+  }
+}
+
+.answer {
+  display: none;
+  margin: 0px 32px 16px 16px;
+  text-align: left;
 }
