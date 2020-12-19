@@ -1,0 +1,50 @@
+// FAQ secion
+.faq_space {
+  text-align: center;
+}
+
+.question_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px $seperator-clr;
+
+  &:focus {
+    outline: none;
+    font-weight: 700;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    & > .arrow {
+      transform: rotate(180deg);
+      background-size: 10px 7px;
+      background-position: left 6px;
+    }
+
+    & ~ .answer {
+      display: block;
+      padding-bottom: 1rem;
+      border-bottom: solid 1px $seperator-clr;
+    }
+  }
+
+  .question {
+    margin: 0;
+  }
+
+  .arrow {
+    width: 10%;
+    background-image: url(../../images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 7px;
+    background-position: right 2px;
+  }
+}
+
+.answer {
+  display: none;
+  margin: 0px 32px 16px 16px;
+  text-align: left;
+}

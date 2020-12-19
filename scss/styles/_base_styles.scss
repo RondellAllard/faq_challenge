@@ -7,6 +7,9 @@ body {
   background-image: linear-gradient($bg-clr-primary, $bg-clr-secondary);
   height: 100vh;
 
+  @media (min-width: $bp-desktop) {
+    overflow: hidden;
+  }
   /*card placement*/
   display: flex;
   flex-direction: column;
