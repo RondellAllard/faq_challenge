@@ -1,6 +1,15 @@
 // FAQ secion
 .faq_space {
   text-align: center;
+
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
 }
 
 .question_block {

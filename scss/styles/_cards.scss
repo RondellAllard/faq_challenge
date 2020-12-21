@@ -37,14 +37,15 @@
     background-position: center;
     @media (min-width: $bp-desktop) {
       position: absolute;
-      height: 359px;
-      width: 479px;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
       background-image: url(../../images/illustration-woman-online-desktop.svg);
+      background-color: transparent;
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center;
-      top: 10%;
-      left: -10%;
+      background-position: -75px 75px;
     }
   }
   .bg_shadow {
@@ -58,13 +59,13 @@
     background-size: 240px 104px;
     background-position: center;
     @media (min-width: $bp-desktop) {
-      position: absolute;
-      height: 954px;
-      width: 966px;
+      position: static;
+      height: 100%;
+      width: 100%;
       background-image: url(../../images/bg-pattern-desktop.svg);
       background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+      background-size: 966px 954px;
+      background-position: -550px -300px;
       top: -50%;
       left: -100%;
     }
@@ -78,8 +79,8 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      top: 50%;
-      left: -20%;
+      top: 38%;
+      left: -21%;
     }
   }
 }
